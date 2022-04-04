@@ -20,5 +20,4 @@ router.get("/:id/edit", carsController.editACar);
 /* update a single car record  */
 router.post("/:id/edit", carsController.updateACar);
 
-
 module.exports = router;
