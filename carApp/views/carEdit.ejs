@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>
+        Update a Record
+    </h1>
+    <p>Make changes to selected car record</p>
+    <form action="/cars/<%= carsLists.id %>/edit" method="post">
+        <label for="manufacturerr">Manufacturer:</label><br>
+        <input type="text" id="manufacturer" name="manufacturer" value="<%= carsLists.manufacturer %>"><br>
+        <label for="model">Model:</label><br>
+        <input type="text" id="model" name="model" value="<%= carsLists.model %>"><br>
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color" value="<%= carsLists.color %>"><br>
+        <label for="year">Year:</label><br>
+        <input type="text" id="year" name="year" value="<%= carsLists.year %>"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+</html>
